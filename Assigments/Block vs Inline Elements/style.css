@@ -1,0 +1,10 @@
+h1{
+    display: inline;
+}
+p{
+display: inline;
+}
+body{
+    background: rgb(17,143,35);
+background: linear-gradient(90deg, rgba(17,143,35,1) 0%, rgba(9,121,104,1) 35%, rgba(0,212,255,1) 100%);
+}
