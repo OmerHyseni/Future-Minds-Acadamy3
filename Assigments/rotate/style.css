@@ -1,0 +1,10 @@
+.red {
+    background-color: red;
+    padding: 10px;
+    transition: ease-in-out 2s;
+    width: 45px;
+}
+
+.red:hover {
+    transform: rotate(360deg);
+}
