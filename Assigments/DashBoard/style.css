@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: lightgray;
+}
+
+.dFlex {
+    display: flex;
+}
+
+aside {
+    background-image: url("images/Untitled.jpg");
+    background-repeat: no-repeat;
+    background-size: 1500px;
+    background-blend-mode: color;
+    background-color: rgba(0, 0, 0, 0.772);
+    height: 150vh;
+    width: 15%;
+    padding: 30px;
+}
+
+.flexDirection {
+    flex-direction: column;
+}
+
+.gap {
+    gap: 28px;
+}
+
+.imgBorder {
+    padding: 5px;
+    border-radius: 10px;
+    color: white;
+}
+
+.alignItems {
+    align-items: center;
+}
+
+.border {
+    border: 2px solid transparent;
+    border-radius: 3px;
+}
+
+
+.border:hover {
+    background-color: grey;
+}
+
+.textWhite {
+    color: white;
+}
+
+.borderbottom {
+    border-bottom: 2px solid white;
+}
+
+hr {
+    color: white;
+}
+
+.black {
+    color: black;
+    margin-bottom: 20px;
+}
+
+.bgRed {
+    background-color: red;
+}
+
+.radius {
+    border-radius: 3px;
+}
+
+.jsContentSpace {
+    justify-content: space-between;
+}
+
+.jsContentAround {
+    justify-content: space-Around;
+}
+
+.radius10 {
+    border-radius: 10px;
+}
+
+.flDirection {
+    flex-direction: row;
+}

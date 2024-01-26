@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.dFlex {
+    display: flex;
+}
+
+.flexDirection {
+    flex-direction: column;
+}
+
+.bgyellow {
+    background-color: darkkhaki;
+}
+
+.bgbrown {
+    background-color: brown;
+}
+
+.justify {
+    justify-content: center;
+}
+
+.cRed {
+    color: red;
+}
+
+.padding10 {
+    padding-bottom: 10px;
+}

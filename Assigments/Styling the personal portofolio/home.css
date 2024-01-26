@@ -1,0 +1,99 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    padding: 0 100px;
+    background: rgb(174, 223, 238);
+    background: radial-gradient(circle, rgba(174, 223, 238, 1) 0%, rgba(0, 117, 255, 1) 100%);
+}
+
+.textAlignCenter {
+    text-align: center;
+}
+
+li,
+a {
+    list-style: none;
+    text-decoration: none;
+    display: inline;
+}
+
+.displayInline {
+    display: inline;
+}
+
+.textColorWhite {
+    color: white;
+}
+
+.bgBlack {
+    background-color: black;
+    transition: ease-in-out 1s;
+}
+
+.bgBlack:hover {
+    background-color: grey;
+    color: yellow;
+}
+
+.padding5 {
+    padding: 5px;
+}
+
+.borderpurple {
+    border-radius: 30px;
+    background-color: rgb(0, 153, 249);
+    padding: 10px;
+    border: 5px solid black;
+    transition: ease-in-out 1s;
+}
+
+.borderpurple:hover {
+    background-color: rgb(78, 175, 255);
+    border: 5px solid white;
+    color: yellow;
+}
+
+.borderRadius {
+    border-radius: 10px;
+}
+
+.borderWhite {
+    border-radius: 15px;
+    background-color: white;
+}
+
+.textblack {
+    color: black;
+}
+
+.bgRed {
+    background-color: red;
+}
+
+hr {
+    color: white;
+}
+
+.bgWhite {
+    background-color: white;
+}
+
+.padding10 {
+    padding: 10px;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 20px;
+    background-color: rgb(0, 153, 249);
+    border-radius: 15px;
+}
+
+tr,
+td {
+    border: 1px solid #000000;
+    padding: 10px;
+    border-radius: 15px;
+}

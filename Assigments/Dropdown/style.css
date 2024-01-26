@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.contanier {
+    background-color: yellow;
+    animation: Omer 2s forwards;
+    animation-duration: 2s;
+    width: 50px;
+}
+
+@keyframes Omer {
+    from {
+        background-color: yellow;
+    }
+
+    to {
+        background-color: red;
+    }
+}
+
+.para {
+    position: absolute;
+    top: 0;
+    left: 2%;
+    opacity: 0;
+    background-color: blue;
+    width: 50px;
+}
+
+.contanier:hover+.para {
+    opacity: 1;
+}

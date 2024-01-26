@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.dsFlex {
+    display: flex;
+}
+
+.contanier {
+    background-color: red;
+}
+
+.borderRadius {
+    border-radius: 170px;
+}
+
+.gap {
+    gap: 2rem;
+}
+
+.justifycontentalign {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bgBlue {
+    background-color: blue;
+    border-radius: 25px;
+}
+
+.padding10 {
+    padding: 10px;
+}
