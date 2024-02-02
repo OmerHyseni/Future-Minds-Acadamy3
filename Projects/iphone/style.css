@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.dFlex {
+    display: flex;
+}
+
+.alItems {
+    align-items: center;
+}
+
+.jsContent {
+    justify-content: center;
+}
+
+div {
+    height: 100vh;
+    width: 100vw;
+}
+
+.hover {
+    color: white;
+    position: absolute;
+    top: 0;
+    background-color: black;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 20px;
+    transition-property: hover;
+    transition: ease-in-out 3s;
+    width: 100px;
+    height: 15px;
+}
+
+.hover:hover {
+    width: 200px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.Idk {
+    opacity: 0;
+    transition: 2s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 42%;
+}
+
+.Idk:hover {
+    opacity: 1;
+}
+
+.hr {
+    background-color: white;
+    position: absolute;
+    bottom: 20px;
+    width: 150px;
+    height: 5px;
+    border-radius: 20px;
+}
+
+.bord {
+    border-radius: 25px;
+}
+
+.pos {
+    position: absolute;
+    left: 510px;
+    top: 8%;
+    width: 0;
+    height: 0;
+}
+
+.radius {
+    border-radius: 20px;
+}
+
+.pos1 {
+    position: absolute;
+    left: 580px;
+    top: 8%;
+    width: 0;
+    height: 0;
+}
+
+.pos2 {
+    position: absolute;
+    left: 655px;
+    top: 8%;
+    width: 0;
+    height: 0;
+}
+
+.radiius {
+    border-radius: 25px;
+}
+
+.pos3 {
+    position: absolute;
+    left: 725px;
+    top: 8%;
+    width: 0;
+    height: 0;
+}
