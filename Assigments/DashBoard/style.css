@@ -19,7 +19,7 @@ aside {
     background-blend-mode: color;
     background-color: rgba(0, 0, 0, 0.772);
     height: 150vh;
-    width: 15%;
+    width: 15vw;
     padding: 30px;
 }
 
@@ -90,4 +90,21 @@ hr {
 
 .flDirection {
     flex-direction: row;
+}
+
+.positionAb {
+    position: absolute;
+    right: 0;
+}
+
+header {
+    width: 79vw;
+}
+
+.gap5 {
+    gap: 5px;
+}
+
+.width {
+    width: 75vw;
 }
