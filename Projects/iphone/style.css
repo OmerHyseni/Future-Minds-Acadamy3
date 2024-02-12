@@ -36,15 +36,15 @@ div {
     margin: 5px;
     border-radius: 20px;
     transition-property: hover;
-    transition: ease-in-out 3s;
+    transition: ease-in-out 2s;
     width: 100px;
     height: 15px;
+    animation: op 2s ease-in-out;
 }
 
 .hover:hover {
-    width: 200px;
-    height: 50px;
-    display: flex;
+    width: 150px;
+    height: 35px;
     align-items: center;
     justify-content: center;
 }
@@ -58,7 +58,7 @@ div {
     justify-content: center;
     align-items: center;
     position: absolute;
-    right: 42%;
+    right: 41%;
 }
 
 .Idk:hover {
@@ -72,18 +72,21 @@ div {
     width: 150px;
     height: 5px;
     border-radius: 20px;
+    animation: op 2s ease-in-out;
 }
 
 .bord {
     border-radius: 25px;
+    animation: op 2s ease-in-out;
 }
 
 .pos {
     position: absolute;
-    left: 510px;
+    left: 505px;
     top: 8%;
     width: 0;
     height: 0;
+    animation: op 2s ease-in-out;
 }
 
 .radius {
@@ -92,10 +95,11 @@ div {
 
 .pos1 {
     position: absolute;
-    left: 580px;
+    left: 575px;
     top: 8%;
     width: 0;
     height: 0;
+    animation: op 2s ease-in-out;
 }
 
 .pos2 {
@@ -104,6 +108,7 @@ div {
     top: 8%;
     width: 0;
     height: 0;
+    animation: op 2s ease-in-out;
 }
 
 .radiius {
@@ -116,4 +121,119 @@ div {
     top: 8%;
     width: 0;
     height: 0;
+    animation: op 2s ease-in-out;
+}
+
+@keyframes op {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 390px) {
+    .bord {
+        width: 390px;
+    }
+
+    .pos {
+        position: absolute;
+        left: 20px
+    }
+
+    .pos1 {
+        position: absolute;
+        left: 120px;
+    }
+
+    .pos2 {
+        position: absolute;
+        left: 220px;
+    }
+
+    .pos3 {
+        position: absolute;
+        left: 320px
+    }
+}
+
+@media (max-width: 412px) {
+    .bord {
+        width: 420px;
+    }
+
+    .pos {
+        position: absolute;
+        left: 20px
+    }
+
+    .pos1 {
+        position: absolute;
+        left: 120px;
+    }
+
+    .pos2 {
+        position: absolute;
+        left: 220px;
+    }
+
+    .pos3 {
+        position: absolute;
+        left: 320px
+    }
+}
+
+@media (max-width: 360px) {
+    .bord {
+        width: 350px;
+    }
+
+    .pos {
+        position: absolute;
+        left: 10px
+    }
+
+    .pos1 {
+        position: absolute;
+        left: 100px;
+    }
+
+    .pos2 {
+        position: absolute;
+        left: 200px;
+    }
+
+    .pos3 {
+        position: absolute;
+        left: 300px
+    }
+}
+
+@media (max-width: 376px) {
+    .bord {
+        width: 380px;
+    }
+
+    .pos {
+        position: absolute;
+        left: 10px
+    }
+
+    .pos1 {
+        position: absolute;
+        left: 100px;
+    }
+
+    .pos2 {
+        position: absolute;
+        left: 200px;
+    }
+
+    .pos3 {
+        position: absolute;
+        left: 300px
+    }
 }

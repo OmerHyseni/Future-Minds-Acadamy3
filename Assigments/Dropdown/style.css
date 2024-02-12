@@ -3,11 +3,25 @@
     padding: 0;
 }
 
-.contanier {
+
+.title {
+    position: relative;
     background-color: yellow;
     animation: Omer 2s forwards;
-    animation-duration: 2s;
-    width: 50px;
+    width: fit-content;
+}
+
+ul {
+    position: absolute;
+    top: 10px;
+    left: 30px;
+    display: none;
+    background-color: blue;
+    width: 200px;
+}
+
+.title:hover ul {
+    display: block;
 }
 
 @keyframes Omer {
@@ -18,17 +32,4 @@
     to {
         background-color: red;
     }
-}
-
-.para {
-    position: absolute;
-    top: 0;
-    left: 2%;
-    opacity: 0;
-    background-color: blue;
-    width: 50px;
-}
-
-.contanier:hover+.para {
-    opacity: 1;
 }
