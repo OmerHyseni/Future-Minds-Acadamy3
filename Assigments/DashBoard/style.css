@@ -117,6 +117,11 @@ header {
     border: none;
     outline: none;
     border-bottom: 1px solid black;
+    transition: 1s ease-in-out;
+}
+
+#Search:focus {
+    border-bottom: 1px solid red;
 }
 
 .focu {
@@ -136,7 +141,7 @@ header {
 .bgWhite {
     background-color: white;
     color: black;
-    transition: ease-in-out 2s;
+    transition: ease-in-out 1s;
     border-radius: 25px;
 }
 
