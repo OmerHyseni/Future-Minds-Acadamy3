@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let FNumber = parseInt(prompt('Enter a Number:'));
+
+        let Operacion = prompt('Enter a Operation');
+
+        let SNumber = parseInt(prompt('Enter a Number:'));
+
+        let result;
+
+        if (Operacion === 'plus') {
+            result = FNumber + SNumber;
+        }
+
+        else if (Operacion === 'minus') {
+            result = FNumber - SNumber
+        }
+
+        else if (Operacion === 'here') {
+            result = FNumber * SNumber
+        }
+
+        else if (Operacion === 'pjestim') {
+            result = FNumber / SNumber
+        }
+
+        else {
+            throw new Error('Invalid')
+        }
+
+        alert(`${FNumber} ${Operacion
+
+
+            } ${SNumber} = ${result}`);
+    </script>
+</body>
+
+</html>

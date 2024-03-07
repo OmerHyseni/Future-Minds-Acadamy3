@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.dflex {
+    display: flex;
+}
+
+
+.contanier {
+    background-color: rgba(0, 0, 0, 0.785);
+    padding: 10px;
+    height: 100vh;
+    width: 145px;
+    background-image: url(/Future-Minds-Acadamy/assets/images/sidebar-1.jpg);
+    background-blend-mode: color;
+    background-size: 100px;
+    background-size: 500px;
+}
+
+.Md {
+    margin-bottom: 10px;
+}
+
+.textWhite {
+    color: white;
+}
+
+.hrW {
+    color: white;
+}
+
+.Mu {
+    margin-top: 10px;
+}
+
+.border {
+    border: 1px transparent solid;
+    padding: 5px;
+    background-color: gray;
+    border-radius: 10px;
+}
+
+.border1 {
+    border: 1px transparent solid;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.border:hover {
+    background-color: rgb(154, 154, 154);
+    filter: blur(1px);
+}
+
+.borderRa {
+    border-radius: 15px;
+}
+
+.flDirection {
+    flex-direction: row;
+}
+
+.contanier2 {
+    background-color: rgba(0, 0, 0, 0.785);
+    padding: 10px;
+    width: 100vw;
+    background-image: url(./gorilla-tag-3000-x-1680-background-rkrozpn7gc2g1f05.jpg);
+    background-blend-mode: color;
+    background-size: 1150px;
+}

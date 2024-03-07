@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let UserGrade = parseInt(prompt('Enter Your Grade here:'))
+
+        let grade;
+
+        if (UserGrade <= 20) {
+            grade = 1;
+        }
+
+        else if (UserGrade <= 40) {
+            grade = 2
+        }
+
+        else if (UserGrade <= 60) {
+            grade = 3
+        }
+
+        else if (UserGrade <= 80) {
+            grade = 4
+        }
+
+        else if (UserGrade <= 100) {
+            grade = 5
+        }
+
+        alert(`Your Grade Is ${grade}`)
+    </script>
+</body>
+
+</html>
