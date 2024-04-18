@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.dflex {
+    display: flex;
+}
+
+.Contanier {
+    background-color: rgb(221, 221, 221);
+    width: 20%;
+    padding: 15px;
+}
+
+.fld {
+    flex-direction: column;
+}
+
+.fld1 {
+    flex-direction: row;
+}

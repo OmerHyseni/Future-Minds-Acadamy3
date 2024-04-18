@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let currentNumber = parseInt(prompt('Shkruani nje numer:'))
+
+        while (currentNumber !== 1) {
+            console.log(currentNumber)
+
+            if (currentNumber % 2 === 0) {
+                currentNumber /= 2;
+            }
+
+            else {
+                currentNumber = currentNumber * 3 + 1
+            }
+        }
+
+        console.log(currentNumber)
+    </script>
+</body>
+
+</html>

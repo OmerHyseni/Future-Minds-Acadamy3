@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.contanier {
+    border: 2px solid black;
+    background-color: lightblue;
+    width: fit-content;
+    transition: 1s ease-in-out;
+}
+
+.contanier:hover {
+    font-size: 20px;
+    border: 2px dashed white;
+    color: white;
+}
+
+.dflex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wh {
+    width: 100vw;
+    height: 100vh;
+}

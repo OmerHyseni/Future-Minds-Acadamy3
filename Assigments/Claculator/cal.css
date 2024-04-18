@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+}
+
+#Numbers {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.class {
+    display: flex;
+    flex-direction: column;
+}
+
+.dsFLex {
+    display: flex;
+}
+
+.gap {
+    gap: 20px;
+}
+
+.ja {
+    justify-content: center;
+    align-items: center;
+}
+
+.Number {
+    background-color: orange;
+    border-radius: 25px;
+    padding: 10px 20px;
+    color: white;
+}
+
+.Contanier {
+    background-color: white;
+}
+
+#Box {
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}

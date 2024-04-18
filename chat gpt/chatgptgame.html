@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Game</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+
+        canvas {
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="titleScreen">
+        <h1>Welcome to Simple Game!</h1>
+        <button onclick="startGame()">Start Game</button>
+    </div>
+    <canvas id="gameCanvas" width="800" height="400"></canvas>
+
+    <script>
+        const canvas = document.getElementById('gameCanvas');
+        const ctx = canvas.getContext('2d');
+
+        let gameStarted = false;
+        let character = {
+            x: 50,
+            y: canvas.height - 50,
+            width: 50,
+            height: 50,
+            velocityX: 0,
+            velocityY: 0,
+            jumping: false
+        };
+
+        function startGame() {
+            document.getElementById('titleScreen').style.display = 'none';
+            gameStarted = true;
+            requestAnimationFrame(updateGame);
+        }
+
+        function updateGame() {
+            if (!gameStarted) return;
+
+            // Clear the canvas
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            // Draw the character
+            ctx.fillStyle = 'blue';
+            ctx.fillRect(character.x, character.y, character.width, character.height);
+
+            // Update character position
+            character.x += character.velocityX;
+            character.y += character.velocityY;
+
+            // Gravity
+            if (character.y < canvas.height - character.height) {
+                character.velocityY += 0.5;
+                character.jumping = true;
+            } else {
+                character.y = canvas.height - character.height;
+                character.velocityY = 0;
+                character.jumping = false;
+            }
+
+            requestAnimationFrame(updateGame);
+        }
+
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'ArrowRight') {
+                character.velocityX = 5;
+            } else if (event.key === 'ArrowLeft') {
+                character.velocityX = -5;
+            } else if (event.key === 'ArrowUp' && !character.jumping) {
+                character.velocityY = -10;
+            }
+        });
+
+        document.addEventListener('keyup', (event) => {
+            if (event.key === 'ArrowRight' || event.key === 'ArrowLeft') {
+                character.velocityX = 0;
+            }
+        });
+    </script>
+</body>
+
+</html>

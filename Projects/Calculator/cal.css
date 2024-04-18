@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: monospace;
+}
+
+.contanier {
+    background-color: rgba(160, 160, 160, 0.646);
+    border: 2px solid transparent;
+    border-radius: 60px;
+    width: fit-content;
+    padding: 60px 30px;
+    display: flex;
+
+}
+
+.jsCAl {
+    align-items: center;
+    justify-content: center;
+}
+
+.wh {
+    width: 100vw;
+    height: 100vh;
+}
+
+.dFlex {
+    display: flex;
+}
+
+.contanier1 {
+    background-color: lightblue;
+    border-radius: 20px;
+    width: 300px;
+    display: flex;
+    padding: 30px 10px;
+    font-size: 30px;
+    justify-content: right;
+}
