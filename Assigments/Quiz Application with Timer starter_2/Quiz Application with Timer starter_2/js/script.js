@@ -45,7 +45,7 @@ function loadQuestion(index) {
     que_text.innerHTML = questions[index].question;
 
     for (let i = 0; i < allOptions.length; i++) {
-        option_list.innerHTML += `<div class="option" onclick="optionSelect(this)"><span>${allOptions[i]}</span></div>`;
+        option_list.innerHTML += `<div class="option" onclick="optionSelect(this, ${index}, ${i})"><span>${allOptions[i]}</span></div>`;
     }
 
     setInterval(timerCount, 1000);
@@ -65,7 +65,22 @@ let timerCount = function () {
 
 }
 
-let optionSelect = function (opt) {
+let optionSelect = function (opt, q, o,) {
+    console.log(questions[q].options[o]);
+
+    for (let i = 0; i < 4; i++) {
+        if (questions[q].options[o] == questions[q].answer) {
+            option_list.children[i].classList.add("correct");
+        }
+
+        option_list.children[i].classList.add("disabled");
+    }
+
+    if (questions[q].options[o] != questions[q].answer) {
+        opt.classList.add("incorrect")
+    }
+
+
     next_btn.classList.add("show");
     total_que.innerHTML = "1 / 6 questions"
 }
