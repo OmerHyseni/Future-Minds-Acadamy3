@@ -1,5 +1,7 @@
 const navigation = document.querySelector("#navigation")
 const Class = document.querySelector(".Class")
+const movieTitles = document.querySelector(".movieTitles")
+let whatGenres = ''
 
 let buildNavHTML = "<ul>";
 
@@ -12,10 +14,19 @@ navigation.innerHTML = buildNavHTML
 let buildGenres = "";
 
 for (let i = 0; i < allMovies.length; i++) {
-    buildGenres += `<li><a href="javascript: loadGenres(${i})">${allMovies[i].genres}</a></li>`
+    buildGenres += `<li onclick='setGenre(${i})'><a href="javascript: loadGenres(${i})">${allMovies[i].genres}</a></li>`;
+}
+
+
+function setGenre(index) {
+    whatGenres = index;
+
+    console.log(whatGenres);
 }
 
 Class.innerHTML = buildGenres
+
+movieTitles = '';
 
 function Face() {
     let url = location.href;

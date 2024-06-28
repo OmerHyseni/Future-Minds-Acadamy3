@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ac</title>
+</head>
+<style>
+    body {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .air {
+        background-image: url(air-conditioner.png);
+        background-repeat: no-repeat;
+        background-size: 200px;
+        height: 100px;
+        width: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    select {
+        width: 100px;
+        margin-left: 40px;
+    }
+</style>
+
+<body>
+    <div class="air" id="ac">
+        <h3 id="temp">0</h3>
+    </div>
+    <select name="" id="tempSelect">
+
+    </select>
+
+    <script>
+        const tempSelect = document.querySelector("#tempSelect")
+        const temp = document.querySelector("#temp")
+
+        let allOptions = "";
+        for (let i = 0; i <= 30; i++) {
+            if (i == 0) {
+                allOptions += `<option value="Off"}">Off</option>`
+            }
+            else {
+                allOptions += `<option value="${i}">${i}</option>`;
+            }
+
+
+        }
+
+        tempSelect.innerHTML = allOptions;
+
+        tempSelect.addEventListener("change", function (e) {
+            temp.textContent = e.target.value;
+        })
+    </script>
+</body>
+
+</html>
