@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>final prep</title>
+</head>
+
+<body>
+    <input type="text" id="title" placeholder="Game Name">
+    <input type="text" id="desc" placeholder="Description">
+    <input type="text" id="views" placeholder="Views">
+    <input type="text" id="likes" placeholder="Likes">
+    <input type="button" id="newGameBtn" value="New Game">
+    <ul id="games">
+
+    </ul>
+
+    <script src="data.js">
+
+    </script>
+
+    <script>
+        const title = document.querySelector("#title");
+        const desc = document.querySelector("#desc");
+        const views = document.querySelector("#views");
+        const likes = document.querySelector("#likes");
+        const newGameBtn = document.querySelector("#newGameBtn");
+        const games = document.querySelector("#games");
+
+        newGameBtn.addEventListener("click", function addGame() {
+            let newGame = {
+                name: title.value,
+                desc: desc.value,
+                views: views.value,
+                likes: likes.value
+            }
+
+            allGames.push(newGame);
+            renderList();
+        });
+
+        renderList();
+        function renderList() {
+            games.innerHTML = "";
+            for (let i = 0; i < allGames.length; i++) {
+                games.innerHTML += `
+<h3>${allGames[i].name}</h3>
+<p>${allGames[i].desc}</p>
+<p>${allGames[i].views}</p>
+<p>${allGames[i].likes}</p>
+<a href="#" onclick="removeGame(${i})">Remove</a>
+`
+            }
+        };
+
+        function removeGame(g) {
+            allGames.splice(g, 1)
+            renderList();
+        }
+    </script>
+</body>
+
+</html>

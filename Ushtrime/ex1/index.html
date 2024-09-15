@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+</head>
+
+
+<body>
+    <form>
+        <label for="txt">Email:</label>
+        <input type="email" id="txt" placeholder="Enter Email">
+        <input type="button" id="btn1" value="Click Me!">
+        <p>Just Enter Your name or whatever you want with no spaces.</p>
+
+        <p id="out1"></p>
+    </form>
+    <script>
+        const txt = document.querySelector("#txt");
+        const btn1 = document.querySelector("#btn1");
+        const out1 = document.querySelector("#out1");
+
+
+
+
+        btn1.addEventListener("click", function fun1() {
+            out1.innerHTML = txt.value + "@gmail.com";
+        });
+    </script>
+</body>
+
+</html>

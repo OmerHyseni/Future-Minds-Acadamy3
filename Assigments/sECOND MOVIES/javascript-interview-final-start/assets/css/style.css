@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+}
+
+#movieThumb {
+    overflow-x: scroll;
+    display: flex;
+    width: 1250px;
+    gap: 1rem;
+}
+
+
+#movieThumb img {
+    width: 200px;
+    list-style-type: none;
+    text-align: center;
+}
+
+#movieThumb li {
+    width: 200px;
+    list-style-type: none;
+}

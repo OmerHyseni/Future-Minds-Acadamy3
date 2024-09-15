@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Center</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="dFlex">
+        <aside>
+            <div>
+                <h1>Game Center</h1>
+            </div>
+            <form action="" class="form1">
+                <input class="TextContainer" id="Title" type="text" placeholder="Game Title"><br>
+                <input class="TextContainer" id="descript" type="text" placeholder="Description"><br>
+                <input class="TextContainer" id="Views" type="number" placeholder="0"><br>
+                <input class="TextContainer" id="likes" type="number" placeholder="0"><br><br>
+                <input class="StyledBtn" type="button" value="New game" id="btnnew">
+            </form>
+            <ul id="games">
+
+            </ul>
+        </aside>
+
+        <main>
+            <ul id="gamesLoad">
+                <!-- Game details will be dynamically inserted here -->
+            </ul>
+        </main>
+    </div>
+
+    <script src="data.js"></script>
+    <script>
+        const Title = document.querySelector("#Title");
+        const descript = document.querySelector("#descript");
+        const Views = document.querySelector("#Views");
+        const likes = document.querySelector("#likes");
+        const btnnew = document.querySelector("#btnnew")
+        const games = document.querySelector("#games");
+        const gamesLoad = document.querySelector("#gamesLoad");
+
+        btnnew.addEventListener("click", function addGame() {
+            let newGames = {
+                name: Title.value,
+                desc: descript.value,
+                views: Views.value,
+                likes: likes.value
+            }
+            allGames.push(newGames);
+            renderList()
+        })
+
+        renderList()
+
+        function renderList() {
+            games.innerHTML = '';
+
+            for (let i = 0; i < allGames.length; i++) {
+                games.innerHTML += `
+                <li class="Game-Contanier" onclick="loadGame(${i})">
+                    <h3>${allGames[i].name}</h3>
+                    <p>${allGames[i].desc}</p>
+                    <p>Views: ${allGames[i].views}</p>
+                    <p>Likes: ${allGames[i].likes}</p>
+                    <a href="#" onclick="removeItem(${i})">Remove</a>
+                </li>`
+            }
+        }
+
+        function removeItem(g) {
+            allGames.splice(g, 1);
+            renderList();
+        }
+
+        function loadGame(g) {
+            gamesLoad.innerHTML = `
+             <li>
+                    <h3>${allGames[g].name}</h3>
+                    <p>${allGames[g].desc}</p>
+                    <p>Views: ${allGames[g].views}</p>
+                    <p>Likes: ${allGames[g].likes}</p>
+            </li>`;
+        }
+    </script>
+</body>
+
+</html>

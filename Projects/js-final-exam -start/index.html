@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="login-page">
+        <h1>Login</h1>
+        <form id="login-form" action="#">
+            <input type="text" id="username" placeholder="Username" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button type="submit" id="LoginBtn">Login</button>
+        </form>
+        <p id="login-error" style="color:red;"></p>
+    </div>
+
+    <div id="dashboard-page" style="display:none;">
+        <h1>Admin Dashboard</h1>
+        <button id="add-new-game-btn">Add New Game</button>
+        <button class="DeleteAllBtn" onclick="deleteAll()">Delete All</button>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Image</th>
+                    <th>Url</th>
+                    <th>Likes</th>
+                    <th>Views</th>
+                    <th>Edit</th>
+                    <th>Remove</th>
+                </tr>
+            </thead>
+            <tbody id="game-list">
+
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Modal for Editing / Adding -->
+    <div id="edit-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="close-edit-modal">&times;</span>
+            <h2 id="modal-title">Edit Game</h2>
+            <form id="edit-form" action="#">
+                <input type="text" id="edit-name" placeholder="Game Name" required>
+
+                <!-- Thumbnail Dropdown -->
+                <select id="edit-thumbnail" required>
+                    <option value="images/cgfc.avif">CG FC</option>
+                    <option value="images/supermarket.avif">Supermarket Game</option>
+                    <option value="images/gun-strike-runner.avif">Gun Strike Runner</option>
+                </select>
+
+                <input type="url" id="edit-url" placeholder="Game URL" required>
+                <input type="number" id="edit-likes" placeholder="Likes" required>
+                <input type="number" id="edit-views" placeholder="Views" required>
+                <button type="submit" id="SaveBtn">Save Changes</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
