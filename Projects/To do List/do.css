@@ -20,3 +20,9 @@
 .fld1 {
     flex-direction: row;
 }
+
+#List {
+    display: flex;
+    flex-direction: column;
+
+}
